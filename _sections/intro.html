@@ -1,0 +1,71 @@
+---
+title: Overview
+auto-header: "none"
+icon: fa-fire
+order: 1
+---
+
+
+<div id="container">
+    <div id="tsparticles"></div>
+    <div id="your-div"><header>
+    <h2 class="alt"><strong>DDLP</strong>: Unsupervised Object-centric Video Prediction with <br> Deep Dynamic Latent Particles</h2>
+  <p><a href=https://taldatech.github.io/>Tal Daniel</a> ⋆ <a href="https://avivt.github.io/avivt/">Aviv Tamar</a><br>Technion - Israel Institute of Technology</p>
+  </header>
+  <div class="header-icons">
+        <a aria-label="Paper" href="https://arxiv.org"><i class="icon fa-file"></i></a>&ensp;
+        <a aria-label="My Github" href="https://github.com/{{ site.github_username }}"><i class="icon-b fa-github" aria-hidden="true"></i></a>&ensp;
+        <a aria-label="Video" href="{{site.youtube_url}}"><i class="icon-b fa-youtube" aria-hidden="true"></i></a>
+  </div>
+  <footer>
+  <a href="#abstract" class="button scrolly">⇩ Dive In ⇩</a>
+</footer>
+    </div>
+</div>
+
+
+
+
+<script>
+tsParticles
+    .loadJSON("tsparticles", "assets/particles.json")
+    .then(container => {
+        console.log("callback - tsparticles config loaded");
+    })
+    .catch(error => {
+        console.error(error);
+    });
+</script>
+
+<!--
+<script>
+tsParticles.load("tsparticles", {
+  
+  fpsLimit: 60,
+  interactivity: {
+    detectsOn: "window",
+    events: {
+      resize: true
+    }
+  },
+  particles: {
+  color: { value: "#f40" },
+    links: {
+      enable: true,
+      distance: 50,
+      color: { value: "#f40" },
+    },
+    move: {
+      enable: true,
+      speed: 5,
+      outModes: {
+        default: "bounce"
+      }
+    },
+    size: {
+      value: 1
+    }
+  }
+});
+</script>-->
+

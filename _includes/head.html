@@ -1,0 +1,84 @@
+<head>
+  {%- if site.google_analytics and jekyll.environment == 'production' -%}
+    {%- include google_analytics.html -%}
+  {%- endif -%}
+  
+  <!-- Robots -->
+  <meta name="robots" content="{{- page.robots | default: 'index, follow' -}}" />
+  {%- unless page.canonical == false -%}<link rel="canonical" href="{{- page.url | absolute_url -}}" />{%- endunless -%}
+  
+  <!-- Title, description, author -->
+  {%- capture _page_title -%}
+    {%- if page.title -%}{{- page.title | append: ' | ' -}}{%- endif -%}
+    {{- site.title | default: "Untitled Website" -}}
+    {%- if site.subtitle -%}{{- site.subtitle | prepend: ' - ' -}}{%- endif -%}
+  {%- endcapture -%}
+  {%- assign _page_title = _page_title | escape -%}
+  {%- assign _page_description = page.description | default: site.description | default: _page_title | escape -%}
+
+  <title>{{- _page_title -}}</title>
+  <meta name="description" content="{{- _page_description -}}" />
+  <meta name="author" content="{{- site.author -}}" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{- _page_title -}}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="{{- site.avatar | absolute_url -}}" />
+  <meta property="og:url" content="{{- page.url | absolute_url -}}" />
+  <meta property="og:site_name" content="{{- site.title | escape -}}" />
+  <meta property="og:description" content="{{- _page_description -}}" />
+  
+  <!-- Styles -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--[if lte IE 8]><script src="{{- 'assets/js/ie/html5shiv.js' | relative_url -}}" defer></script><![endif]-->
+  <link rel="stylesheet" href="{{- 'assets/css/main.css' | relative_url -}}" />
+  <!--[if lte IE 8]><link rel="stylesheet" href="{{- 'assets/css/ie8.css' | relative_url -}}" /><![endif]-->
+  <!--[if lte IE 9]><link rel="stylesheet" href="{{- 'assets/css/ie9.css' | relative_url -}}" /><![endif]-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+  <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/favicon.ico" >
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markdown-it-texmath/css/texmath.min.css">
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" defer></script>
+  <script src="{{- 'assets/js/jquery.scrolly.min.js' | relative_url -}}" defer></script>
+  <script src="{{- 'assets/js/jquery.scrollzer.min.js' | relative_url -}}" defer></script>
+  <script src="{{- 'assets/js/skel.min.js' | relative_url -}}" defer></script>
+  <script src="{{- 'assets/js/util.js' | relative_url -}}" defer></script>
+  <!--[if lte IE 8]><script src="{{- 'assets/js/ie/respond.min.js' | relative_url -}}" defer></script><![endif]-->
+  <script src="{{- 'assets/js/main.js' | relative_url -}}" defer></script>
+  <!-- first include tsParticles engine -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine"></script>
+  <!-- then include any tsParticles plugin needed -->
+  <!--<script src="https://cdn.jsdelivr.net/npm/tsparticles/tsparticles.bundle.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.11/tsparticles.min.js"></script>
+  <!-- then include jquery wrapper -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
+<style>
+#container {
+    position: relative;
+}
+
+#tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 0; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
+}
+
+#your-div {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+
+</style>
+</head>
