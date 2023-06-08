@@ -12,7 +12,7 @@ We extend the definition of a latent particle from the original [DLP](https://ta
 
 <p style="text-align:center;"><img src="{{ 'assets/images/latent_particle_fig.png' }}" style="height:250px"></p>
 
-A foreground latent particle \( z = [z_p, z_s, z_d, z_t, z_f] \in \mathbb{R}^{6 + m} \) is a disentangled latent variable composed of the following learned stochastic latent attributes:
+A foreground latent particle $$ z = [z_p, z_s, z_d, z_t, z_f] \in \mathbb{R}^{6 + m} $$ is a disentangled latent variable composed of the following learned stochastic latent attributes:
 * Position $$ z_p \sim \mathcal{N}(\mu_p, \sigma_p^2) \in \mathbb{R}^2 $$
 * Scale $$ z_s \sim \mathcal{N}(\mu_s, \sigma_s^2) \in \mathbb{R}^2 $$
 * Depth $$ z_d \sim \mathcal{N}(\mu_d, \sigma_d^2) \in \mathbb{R} $$
