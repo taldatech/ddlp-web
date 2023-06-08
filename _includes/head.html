@@ -2,6 +2,15 @@
   {%- if site.google_analytics and jekyll.environment == 'production' -%}
     {%- include google_analytics.html -%}
   {%- endif -%}
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GZRYZ91H5D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GZRYZ91H5D');
+</script>
   
   <!-- Robots -->
   <meta name="robots" content="{{- page.robots | default: 'index, follow' -}}" />

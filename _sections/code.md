@@ -4,11 +4,11 @@ icon: fa-code
 order: 4
 ---
 
-Code, examples and pre-trained models are available on <a href="https://github.com/taldatech/deep-latent-particles-pytorch">GitHub</a>.
+Code, examples and pre-trained models are available on <a href="https://github.com/taldatech/ddlp">GitHub</a>.
 
-<a href="https://github.com/taldatech/deep-latent-particles-pytorch"><img src="{{ 'assets/images/github.png' }}" style="height:200px"></a>
+<a href="https://github.com/taldatech/ddlp"><img src="{{ 'assets/images/github.png' }}" style="height:200px"></a>
 <br>
-<a href="https://colab.research.google.com/github/taldatech/deep-latent-particles-pytorch"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+<a href="https://colab.research.google.com/github/taldatech/ddlp"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 
 <!--This Jekyll theme lets you build as many of these sections as you want. They live in the _sections folder in your project's root directory. For some examples, see the [GitHub repository](https://github.com/chrisbobbe/jekyll-theme-prologue). Just be sure to add some [frontmatter](https://jekyllrb.com/docs/frontmatter/) to each section.
 
