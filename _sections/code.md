@@ -3,6 +3,7 @@ title: Code
 icon: fa-code
 order: 4
 ---
+<p style="text-align:center;"><img src="{{ 'assets/images/DDLP_GUI.gif' }}" style="height:250px"></p>
 
 Code, examples and pre-trained models are available on <a href="https://github.com/taldatech/ddlp">GitHub</a>.
 
