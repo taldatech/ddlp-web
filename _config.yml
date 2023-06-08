@@ -40,7 +40,7 @@ email:
 avatar: 
 
 # You'll want to customize url and baseurl for your own site:
-baseurl: "/jekyll-theme-prologue" # the subpath of your site, e.g. /blog
+baseurl: "/ddlp-web" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 # Social settings
@@ -62,7 +62,7 @@ google_analytics:
 
 # The following settings are NECESSARY for the Prologue theme to run:
 #theme: jekyll-theme-prologue
-remote_theme: chrisbobbe/jekyll-theme-prologue
+#remote_theme: chrisbobbe/jekyll-theme-prologue
 collections: [sections]
 
 markdown: kramdown
