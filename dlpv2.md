@@ -20,7 +20,7 @@ A foreground latent particle $$ z = [z_p, z_s, z_d, z_t, z_f] \in \mathbb{R}^{6 
 * Visual features $$ z_f \sim \mathcal{N}(\mu_f, \sigma_f^2) \in \mathbb{R}^m$$, where $$m$$ is the dimension of learned visual features. 
 * Background $$z_{\text{bg}} \sim \mathcal{N}(\mu_{\text{bg}}, \sigma_{\text{bg}}^2) \in \mathbb{R}^{m_{\text{bg}}} $$, always located in the center of the image and described only by $$m_{\text{bg}}$$ latent background visual features.
 
-The architecture deisgn of DLPv2 follows the original design of [DLP](https://taldatech.github.io/deep-latent-particles-web/), where the encoder is modified to account for the new attributes. Please refer to the paper for more details.
+The architecture design of DLPv2 follows the original design of [DLP](https://taldatech.github.io/deep-latent-particles-web/), where the encoder is modified to account for the new attributes. Please refer to the paper for more details.
 
 <p style="text-align:center;"><img src="{{ 'assets/images/encoder_arch.png' }}" style="height:300px"></p>
 
