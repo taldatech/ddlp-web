@@ -31,7 +31,7 @@ order: 5
 <img src="{{ 'assets/images/traffic_g3.gif' }}" style="height:150px">
 </p>
 
-**Fast video genereration with DLPs**: as DDLP's latent space is compact, training a <a href="https://arxiv.org/abs/2006.11239">DDPM</a> is fast and takes less than a day on a single RTX A4000 GPU. For example, for *OBJ3D*, each frame is represented as 12 foreground particles and 1 background particle, i.e. $$K=13$$, and each particle has a total of $$F=14$$, resulting in $$\tau \times K \times F= 4 \times 13 \times 14 = 728$$, which is much smaller than a single CIFAR10 image, $$C\times H \times W = 3\times32\times32=3072$$.
+**Fast video generation with DLPs**: as DDLP's latent space is compact, training a <a href="https://arxiv.org/abs/2006.11239">DDPM</a> is fast and takes less than a day on a single RTX A4000 GPU. For example, for *OBJ3D*, each frame is represented as 12 foreground particles and 1 background particle, i.e. $$K=13$$, and each particle has a total of $$F=14$$, resulting in $$\tau \times K \times F= 4 \times 13 \times 14 = 728$$, which is much smaller than a single CIFAR10 image, $$C\times H \times W = 3\times32\times32=3072$$.
 
 <p style="text-align:center;">
 <img src="{{ 'assets/images/balls_170.gif' }}" style="height:150px">
